@@ -10,7 +10,7 @@ const createDeleteButton = (deletetask,row) => {
   deleteButton.innerText = '削除';
   deletetask.appendChild(deleteButton);
   deleteButton.addEventListener('click', () => {
-    const index = row.rowIndex - 1;
+    const index = row.rowIndex -1;
     taskarray.splice(index,1);
     AddTasks();
   })
