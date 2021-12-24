@@ -24,14 +24,11 @@ const createStatusButton = (status,taskstatus) => {
       if(statusButton.innerText === '作業中'){
         taskstatus = '完了';
         statusButton.innerText = taskstatus;
-        
-      }
-      else{
+      }else{
         taskstatus = '作業中';
         statusButton.innerText = taskstatus;
-  
       }
-  })
+  });
 }
 
 //タスクを追加する
